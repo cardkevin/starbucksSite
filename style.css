@@ -297,7 +297,84 @@ section a {
     }
 }
 
-@media(min-width: 1440px) {
+/* ---------- HAMBURGER MENU ----------  */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+
+@media (max-width: 830px) {
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-reverse :first-child {
+        order: 0;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar .navbar-nav-left,
+    .navbar .navbar-nav-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1440px) {
     .box {
         max-width: 1440px;
         margin-right: auto;
