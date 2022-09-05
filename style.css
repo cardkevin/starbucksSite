@@ -36,7 +36,13 @@ img {
     max-width: 100%;
 }
 
-/* ------ NAVBAR -------- */
+section a {
+    color: #fff;
+}
+
+
+
+/* ---------- NAVBAR ---------- */
 .navbar {
     width: 100%;
     height: auto;
@@ -105,7 +111,21 @@ img {
     margin: 0 5px;
 }
 
-/* ------- BUTTON ---------- */
+.navbar-nav-right li:nth-child(2) {
+    margin: 0 5px;
+}
+
+/* ---------- BOX ---------- */
+.box {
+    margin-bottom: 30px;
+}
+
+.box-inner {
+    max-width: 700px;
+    margin: 0 auto; /* centers */
+}
+
+/* ---------- BUTTON ---------- */
 
 .btn {
     cursor: pointer;
@@ -140,4 +160,86 @@ img {
 
 .btn-dark:hover {
     background-color: #333;
+}
+
+
+/* ---------- BACKGROUND FORMATTING 1 ---------- */
+.bg-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.bg-extra {
+    background-color: var(--color-extra);
+    color: #fff;
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+    color: #000;
+}
+
+/* ---------- TEXT FORMATTING ---------- */
+.text-center {
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-md {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-sm {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+/* ---------- PADDING ---------- */
+
+.py-sm {
+    padding: 10px 0;
+}
+
+.py-md {
+    padding: 20px 0;
+}
+
+.py-lg {
+    padding: 40px 0;
+}
+
+
+@media(max-width: 960px) {
+    .text-xl {
+        font-size: 30px;
+    }
+
+    .text-lg {
+        font-size: 25px;
+    }
+
+    .text-md {
+        font-size: 19px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .box {
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
