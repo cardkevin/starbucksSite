@@ -7,3 +7,5 @@
 ### 10/27/20022 Rewards to be completed
 
 ### 10/29/2022 Login/ Signup to be completed
+
+Check it out at: https://cardkevin.github.io/starbucksSite/
